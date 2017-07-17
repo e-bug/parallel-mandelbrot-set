@@ -8,16 +8,16 @@ You can use the Makefile to build the executables; they will be compiled with th
 ## Source files
 - `io_binary.h`: C header file for `io_binary.c`.
 - `io_binary.c`: C file with all the used plotting functions.
-<br>
+
 - `palettes.h`: C header file for `palettes.c`.
 - `palettes.c`: C file with different colormaps for the produced image.
-<br>
+
 - `opti3_escape_time.cu`: CUDA implementation of *opti3*, only parallelizing the escape time evaluations for each pixel.
-<br>
+
 - `escape_time_4.cuh`: CUDA header for `escape_time_4.cu`.
 - `escape_time_4.cu`: CUDA part for the implementation also parallelizing the evaluation of the color for each pixel.
 - `opti4_escape_time.c`: C part for the implementation also parallelizing the evaluation of the color for each pixel.
-<br>
+
 - `escape_time_5.cuh`: CUDA header for `escape_time_5.cu`.
 - `escape_time_5.cu`: CUDA part for the single-precision implementation of *opti4*.
 - `opti5_escape_time.c`: C part for the single-precision implementation of *opti4*.
