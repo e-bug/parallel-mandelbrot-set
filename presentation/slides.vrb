@@ -1,0 +1,29 @@
+\frametitle{The Escape Time Algorithm}
+
+\begin{algorithm}[H]
+	\footnotesize
+	\caption{Escape Time algorithm}\label{euclid}
+	\begin{algorithmic}[1]
+		%		\Procedure{}{}
+		\For {each pixel (Px, Py) on the screen}
+		\State $x_0 \gets$ scaled x coordinate of pixel
+		\State $y_0 \gets$ scaled y coordinate of pixel
+		\State $x \gets 0.0$
+		\State $y \gets 0.0$
+		\State $iteration \gets 0$
+		\While {$(x\times x + y\times y < 2\times 2$  AND  $iteration < max\_iteration)$}
+		\State $x_{temp} \gets x\times x - y\times y + x_0$
+		\State $y \gets 2\times x\times y + y_0$
+		\State $x \gets x_{temp}$
+		\State $iteration \gets iteration + 1$
+		\EndWhile
+		\State $color \gets palette[iteration]$
+		\State $plot(Px, Py, color)$
+		\EndFor
+		%		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+\vspace{-0.7cm}
+{\footnotesize Where $z = x + iy$, $c = x_0 + iy_0$, $x = Re(z^2+c)$ and $y=Im(z^2+c)$.}
+
+\underline{Embarrassingly parallel problem:} each pixel independent of any other.

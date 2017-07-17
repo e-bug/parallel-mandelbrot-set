@@ -1,0 +1,134 @@
+\textwidth 6.27in
+\textheight 9in
+\oddsidemargin 0in
+\evensidemargin 0in
+\topmargin -0.25in
+\headheight 0.25in
+\headsep 36pt
+\footskip 36pt
+
+
+
+\def\zero {\smash{\text{\Large 0}}}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\half{\frac{1}{2}}
+\newcommand{\vect}[1]{\vec{#1}}
+\def\x{\vec{x}}
+\def\y{\vec{y}}
+\def\z{\vec{z}}
+\def\u{\vec{u}}
+\def\f{\vec{f}}
+\def\b{\vec{b}}
+\def\diag{\rm diag}
+\def\max{\rm max}
+\def\min{\rm min}
+\newcommand{\MN}{\mathcal{M}_N}
+\newcommand{\mx}[1]{{\bf #1}}
+\newcommand{\veps}{\varepsilon}
+\newcommand{\vphi}{\varphi}
+\newcommand{\real}{\mathop{\mathcal Re}\nolimits}
+
+%*** specific for exerices-corriges:
+\usepackage{url}
+\usepackage{amsmath,epsfig,amssymb,enumerate,ifthen,multirow,epic,fancybox,amsthm,fancyhdr}
+
+
+\pagestyle{fancy} \fancyfoot{} \fancyhf{}
+\fancyhead[L]{
+{\bf Parallel and high-performance computing}%\\
+}               % Chapter in the right on even pages\fancyhead[RO]{\nouppercase\rightmark}              % Section in the left on odd pages
+\fancyhead[R]{
+\begin{minipage}[b]{10cm}
+\flushright
+{\scriptsize \url{http://go.epfl.ch/phpc-2017}}\\
+\end{minipage}
+}
+\renewcommand{\headrulewidth}{0.3pt}    % Width of head rule
+\fancyfoot[C]{\thepage}
+
+
+
+\newcommand{\corrigetitle}[1]{
+%\entete
+\begin{center}
+{\Large\bf Serie #1 - Solution}\\[3mm]
+\end{center}
+}
+
+
+\newcommand{\enoncetitle}[1]{
+%\entete
+
+\begin{center}
+{\Large\bf Serie #1}\\[3mm]
+\end{center}
+}
+
+\newcommand{\pptitle}[1]{
+%\entete
+\begin{center}
+{\Large\bf PROJECT PROPOSAL PHPC-2017} \\[3mm]
+{\Large\it #1}\\[10mm]
+\end{center}
+}
+
+\newcommand{\ppintro}[8]{
+\begin{center}
+\begin{tabular}{| l | l |}
+	\hline
+	Principal investigator (PI) & #1 \\
+	\hline
+	Institution & #2 \\
+	\hline
+	Address & #3 \\
+	\hline
+	Involved researchers & #4 \\
+	\hline
+	Date of submission & #5 \\
+	\hline
+	Expected end of project & #6 \\
+	\hline
+	Target machine & #7 \\
+	\hline
+	Proposed acronym & #8 \\
+	\hline
+\end{tabular}
+\end{center}
+\vspace{10mm}
+}
+
+
+
+\newcommand{\ppabstract}[1]{
+%abstract
+\begin{abstract}
+#1
+\end{abstract}}
+
+
+\newcommand{\vc}[1]{{\vec #1}}
+%\newcommand{\mx}[1]{{\bf #1}}
+%\newcommand{\diag}{\mathop{\rm diag}\nolimits}
+%\newcommand{\real}{\mathop{\mathcal Re}\nolimits}
+%\newcommand{\MN}{\mathcal{M}_N}
+%\newcommand{\MNj}{\mathcal{M}_{N_j}}
+%\newcommand{\MNC}{\mathcal{M}_N^\C}
+%\newcommand{\vphi}{\varphi}
+%\newcommand{\sign}{\mathop{\rm sign}\nolimits}
+
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+\newtheorem{indication}{\indent Indications g\'en\'erales}
+\def\theindication{\mbox{}}
+%\newremark{lemme}{Lemma}
+%\newremark{exercise}{Exercice}
+%\newremark{corrige}{Exercice}
+\def\endcorrige{\par\mbox{}\hfill$\triangle$\endtrivlist}
+
+\newcommand{\indic}[1]{[{\bf Indications:} #1]}
+\newcommand{\sign}{\mathop{\rm sign}\nolimits}
+
+\endinput
+

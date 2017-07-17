@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Scientific Background}{}% 1
+\BOOKMARK [1][-]{section.2}{Implementations}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Serial implementations}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{Prior results}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Theoretical computational cost}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Strong scaling}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.3}{Weak scaling}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Going parallel}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{CUDA implementations}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Hybrid implementations}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Final results}{}% 11
+\BOOKMARK [1][-]{section.6}{Resources budget}{}% 12
+\BOOKMARK [2][-]{subsection.6.1}{Computing Power}{section.6}% 13
+\BOOKMARK [2][-]{subsection.6.2}{Raw storage}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.3}{Grand Total}{section.6}% 15
+\BOOKMARK [1][-]{section.7}{Scientific outcome}{}% 16

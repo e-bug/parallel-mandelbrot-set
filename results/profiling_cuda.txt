@@ -1,0 +1,51 @@
+APPLICATION                                   TIME          KERNEL          D2H
+=========================================================================================
+##################################### Small image #######################################
+./opti4_escape_time   o3  1920  1080     1000   0.230000 [s]       1.8319ms     986.68us
+./opti4_escape_time   o3  1920  1080    10000   0.260000 [s]      13.848ms    1.0649ms
+./opti4_escape_time   o3  1920  1080   100000   0.370000 [s]     134.77ms     1.4683ms
+./opti4_escape_time   o3  1920  1080  1000000   1.500000 [s]   1.25153s         950.80us
+./opti4_escape_time   o3  1920  1080 10000000  13.550000 [s]  13.3159s          906.45us
+
+./opti4v2_escape_time o3  1920  1080     1000   0.260000 [s]       1.8485ms   3.2710ms
+./opti4v2_escape_time o3  1920  1080    10000   0.260000 [s]      13.760ms    2.6327ms
+./opti4v2_escape_time o3  1920  1080   100000   0.410000 [s]     134.87ms     3.2042ms
+./opti4v2_escape_time o3  1920  1080  1000000   1.620000 [s]   1.37200s       2.4516ms
+./opti4v2_escape_time o3  1920  1080 10000000  13.700000 [s]  13.4479s        2.5107ms
+
+##################################### Large image #######################################
+./opti4_escape_time   o3 25600 14400     1000   1.440000 [s]     155.10ms   264.06ms
+./opti4_escape_time   o3 25600 14400    10000   2.020000 [s]     816.67ms   244.27ms
+./opti4_escape_time   o3 25600 14400   100000   8.440000 [s]   7.28546s     217.14ms
+./opti4_escape_time   o3 25600 14400  1000000  72.630000 [s]  71.4286s      236.60ms
+./opti4_escape_time   o3 25600 14400 10000000 711.760000 [s] 710.023s       241.08ms
+
+./opti4v2_escape_time o3 25600 14400     1000   1.580000 [s]     157.27ms   528.66ms
+./opti4v2_escape_time o3 25600 14400    10000   2.060000 [s]     818.93ms   481.83ms
+./opti4v2_escape_time o3 25600 14400   100000   8.550000 [s]   7.27391s     441.07ms
+./opti4v2_escape_time o3 25600 14400  1000000  72.760000 [s]  71.3689s      446.15ms
+./opti4v2_escape_time o3 25600 14400 10000000 712.310000 [s] 710.272s       436.93ms
+
+
+#########################################################################################
+#########################################################################################
+#########################################################################################
+
+[bugliare@r08-nodegpu02 debug]$ nvprof --print-gpu-trace ./opti5_escape_time o5 25600 14400 1000000
+==13703== NVPROF is profiling process 13703, command: ./opti5_escape_time o5 25600 14400 1000000
+Execution time = 36.030000 [s]
+==13703== Profiling application: ./opti5_escape_time o5 25600 14400 1000000
+==13703== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput           Device   Context    Stream  Name
+359.95ms  2.7444ms                    -               -         -         -         -  527.34MB  187.65GB/s   Tesla K40m (0)         1         7  [CUDA memset]
+362.71ms  1.3120us                    -               -         -         -         -        4B  2.9075MB/s   Tesla K40m (0)         1         7  [CUDA memcpy HtoD]
+362.73ms     929ns                    -               -         -         -         -        4B  4.1062MB/s   Tesla K40m (0)         1         7  [CUDA memcpy HtoD]
+362.74ms     928ns                    -               -         -         -         -        4B  4.1107MB/s   Tesla K40m (0)         1         7  [CUDA memcpy HtoD]
+362.75ms     960ns                    -               -         -         -         -        4B  3.9736MB/s   Tesla K40m (0)         1         7  [CUDA memcpy HtoD]
+362.76ms     960ns                    -               -         -         -         -        4B  3.9736MB/s   Tesla K40m (0)         1         7  [CUDA memcpy HtoD]
+362.77ms     960ns                    -               -         -         -         -        4B  3.9736MB/s   Tesla K40m (0)         1         7  [CUDA memcpy HtoD]
+362.78ms     960ns                    -               -         -         -         -        4B  3.9736MB/s   Tesla K40m (0)         1         7  [CUDA memcpy HtoD]
+362.79ms     960ns                    -               -         -         -         -        4B  3.9736MB/s   Tesla K40m (0)         1         7  [CUDA memcpy HtoD]
+362.95ms  34.7878s         (480000 1 1)       (384 1 1)        25        0B        0B         -           -   Tesla K40m (0)         1         7  compute_escape_time(char*) [400]
+35.1507s  217.67ms                    -               -         -         -         -  527.34MB  2.3659GB/s   Tesla K40m (0)         1         7  [CUDA memcpy DtoH]
+
