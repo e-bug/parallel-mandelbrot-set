@@ -14,7 +14,7 @@ You can use the Makefile to build the executables; they will be compiled with th
 - `escape_time_5_1gpu_per_proc.cu`: CUDA part for the implementation running on 2 processors and 2 GPUs (one per processor).
 - `opti5_escape_time_1gpu_per_proc.c`: C (MPI) part for the implementation running on 2 processors and 2 GPUs (one per processor) where image parts are sent to rank 0 with non-blocking communications.
 - `opti5-IO_escape_time_1gpu_per_proc.c`: C (MPI) part for the implementation running on 2 processors and 2 GPUs (one per processor) exploiting MPI parallel writing.
-<br>
+
 - `escape_time_5_2gpu_per_proc.cuh`: CUDA header for `escape_time_5_2gpu_per_proc.cu`.
 - `escape_time_5_2gpu_per_proc.cu`: CUDA part for the implementation running on 2 processors and 4 GPUs (two per processor).
 - `opti5_escape_time_2gpu_per_proc.c`: C (MPI) part for the implementation running on 2 processors and 4 GPUs (two per processor) where image parts are sent to rank 0 with non-blocking communications.
