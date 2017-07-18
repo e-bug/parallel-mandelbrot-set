@@ -13,7 +13,7 @@ The aim of this project is to obtain a parallal and high performance implementat
 After optimizing the serial version, we move the workload to the GPU using CUDA and tune hyperparameters, like the block size, to increase the application's achieved occupancy and obtain a first optimized parallel version. <br>
 Finally, we distribute the workload to different processors and multiple GPUs using MPI (including MPI-IO for parallel I/O).
 
-The performance of these versions are then compared in terms of Strong Scaling and Weak Scaling.
+The performance of these versions is then assessed in terms of Strong Scaling and Weak Scaling.
 
 
 ## Description of this repository
