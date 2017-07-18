@@ -1,4 +1,7 @@
-# A High Performance Implementation of the Mandelbrot Set
+# A High-Performance Implementation of the Mandelbrot Set
+
+Repository for the project in Parallel and High-Performance Computing, EPFL 2016/2017. <br>
+<hr />
 
 A parallel implementation of the “escape time” algorithm to produce drawings of the Mandelbrot Set. <br> 
 Application coded in C; parallel implementations in CUDA and CUDA+MPI.
