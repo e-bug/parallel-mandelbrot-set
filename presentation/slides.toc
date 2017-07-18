@@ -1,6 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Scientific Background}{3}{0}{1}
-\beamer@sectionintoc {2}{Implementations}{7}{0}{2}
-\beamer@sectionintoc {3}{Going Parallel}{11}{0}{3}
-\beamer@sectionintoc {4}{Results}{17}{0}{4}
-\beamer@sectionintoc {5}{Conclusion}{20}{0}{5}
